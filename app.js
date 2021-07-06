@@ -18,11 +18,13 @@ function app() {
     navBurger.classList.toggle('open');
     mobileNav.classList.toggle('open');
   });
-
+  // on scroll listner
   window.addEventListener('scroll', function () {
     if (window.pageYOffset > offset) {
       //scroll down
       stickyNavbar.setAttribute('style',`transform: translateY(-70px);`);
+
+      //sets navbar background to white
       navs.forEach(nav=>{
         nav.style.backgroundColor = '#ffffff';
       })
