@@ -273,7 +273,7 @@ footer.grid {
     padding: 0px; }
     footer.grid .col .icon {
       display: inline-block;
-      width: 40px;
+      width: 2.9vw;
       cursor: pointer; }
     footer.grid .col img {
       margin: auto;
