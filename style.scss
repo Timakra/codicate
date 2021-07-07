@@ -394,6 +394,12 @@ footer.grid{
   body,html{
     position: relative;
     overflow-x: hidden;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   #sticky{
     .secondary-bar{
