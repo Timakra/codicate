@@ -187,9 +187,9 @@ main {
   }
   .cta {
     text-align: center;
-
+    justify-content: center;
     height: fit-content;
-    padding:100px 20vw;
+    padding:10px 20vw;
     top: 0px;
 
     h1.top {
@@ -217,6 +217,7 @@ main {
 
       .col {
         display: inline-block;
+
         &.first {
           font-family: "Helvetica Neue MD";
           font-weight: bolder;
@@ -241,9 +242,10 @@ main {
         }
         .row {
           display: block;
-          padding: 20px;
+          padding: 0px;
           width: 17.5vw;
-          height: 63px;
+          height: 90px;
+          padding-top:10px;
           &:not(.first):not(.last) {
             border-bottom: 1px #7070753b solid;
           }
@@ -387,9 +389,6 @@ footer.grid{
     }
 }
 
-.spacer {
-  height: 1000000000vh;
-}
 
 @media screen and (max-width: 1000px) {
   body,html{
@@ -397,7 +396,11 @@ footer.grid{
     overflow-x: hidden;
   }
   #sticky{
-
+    .secondary-bar{
+      max-width: 100vw;
+      white-space: nowrap;
+      overflow-x:scroll;
+    }
   }
   .burger {
     cursor: pointer;
@@ -527,4 +530,25 @@ footer.grid{
       }
   }
 
+}
+
+@media screen and (max-width: 600px) {
+  main{
+    article{
+      &.top-section {
+        margin-top: 0;
+        padding:20px 0;
+        height: fit-content;
+        .segment{
+          padding:0;
+        }
+      }
+    }
+    .cta{
+      padding: 70px 0px;
+      .table .col .row{
+        width: 31.5vw;
+      }
+    }
+  }
 }

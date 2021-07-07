@@ -143,8 +143,9 @@ main article {
           display: inline-block; }
 main .cta {
   text-align: center;
+  justify-content: center;
   height: fit-content;
-  padding: 100px 20vw;
+  padding: 10px 20vw;
   top: 0px; }
   main .cta h1.top {
     color: #9000ff;
@@ -186,9 +187,10 @@ main .cta {
         z-index: 1; }
       main .cta .table .col .row {
         display: block;
-        padding: 20px;
+        padding: 0px;
         width: 17.5vw;
-        height: 63px; }
+        height: 90px;
+        padding-top: 10px; }
         main .cta .table .col .row:not(.first):not(.last) {
           border-bottom: 1px #7070753b solid; }
         main .cta .table .col .row.last {
@@ -300,13 +302,15 @@ footer.grid {
       width: 100px;
       display: block; }
 
-.spacer {
-  height: 1000000000vh; }
-
 @media screen and (max-width: 1000px) {
   body, html {
     position: relative;
     overflow-x: hidden; }
+
+  #sticky .secondary-bar {
+    max-width: 100vw;
+    white-space: nowrap;
+    overflow-x: scroll; }
 
   .burger {
     cursor: pointer;
@@ -405,5 +409,16 @@ footer.grid {
       footer.grid .tags img {
         width: 100px;
         display: inline-block; } }
+@media screen and (max-width: 600px) {
+  main article.top-section {
+    margin-top: 0;
+    padding: 20px 0;
+    height: fit-content; }
+    main article.top-section .segment {
+      padding: 0; }
+  main .cta {
+    padding: 70px 0px; }
+    main .cta .table .col .row {
+      width: 31.5vw; } }
 
 /*# sourceMappingURL=style.css.map */
